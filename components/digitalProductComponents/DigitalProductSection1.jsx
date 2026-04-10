@@ -24,7 +24,7 @@ function DigitalProductSection1() {
     const fetchProducts = async () => {
       try {
         setLoading(true);
-        const { data, error } = await supabase.from("products").select("*");
+        const { data, error } = await supabase.from("products").select("*").eq("status", "active");
         // .order("created_at", { ascending: false });
 
         if (error) {
@@ -58,7 +58,7 @@ function DigitalProductSection1() {
 
   if (loading) {
     return (
-      <section className="w-full px-5 pt-16 pb-16 lg:px-24 lg:pb-24">
+      <section className="w-full px-5 pt-16 pb-16 mx-auto lg:px-48 lg:pb-24">
         <div className="flex items-center justify-center">
           <div className="text-center">
             <div className="w-8 h-8 mx-auto mb-4 border-4 border-gray-300 rounded-full animate-spin border-t-green-600"></div>
@@ -88,7 +88,7 @@ function DigitalProductSection1() {
   }
 
   return (
-    <section className="w-full px-5 pt-16 pb-16 lg:px-24 lg:pb-24">
+    <section className="w-full px-5 pt-16 pb-16 lg:px-48 lg:pb-24">
       <div className="flex items-center justify-center mb-12">
         <div className="relative w-full md:max-w-1/2">
           <input
@@ -119,7 +119,7 @@ function DigitalProductSection1() {
         {filteredProducts.map((product) => (
           <Card
             key={product.id}
-            className="relative flex flex-col pt-0 overflow-hidden transition-shadow duration-300 border-none hover:shadow-lg w-[405px] h-auto"
+            className="relative flex flex-col pt-0 overflow-hidden transition-shadow duration-300 border-none hover:shadow-lg w-[405px] h-auto "
           >
             {product.label && (
               <div className="absolute px-2 py-1 bg-[#FFEEE6] top-2 left-2 rounded-xl">
@@ -144,41 +144,20 @@ function DigitalProductSection1() {
               <p className="text-gray-600 line-clamp-3">{product.subline}</p>
             </CardContent>
             <CardFooter className="">
-              <button
-                onClick={() => handleViewDetails(product.product_id)}
+              <a
+                  href={product.selar_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 className="flex items-center justify-center w-full px-6 py-3 font-normal text-white transition-all duration-300 ease-in-out hover:scale-105 focus:outline-none "
               >
                 <span className="mr-2 text-black">View Product</span>
                 <ChevronRight className="w-5 h-5 text-black" />
-              </button>
+              </a>
             </CardFooter>
           </Card>
 
-          // <div
-          //   key={product.headline}
-          //   className="flex flex-col border border-red-500"
-          // >
-          //   <Image
-          //     src={product.image || "/image9.jpg"}
-          //     width={400}
-          //     height={500}
-          //     alt={product.headline}
-          //     className="w-full h-[450px] md:w-auto md:h-[300px] transition-transform duration-500 ease-in-out group-hover:scale-110 items-center object-cover rounded-lg"
-          //   />
+    
 
-          //   <div className="mt-3">
-          //     <h1 className="text-xl font-bold text-center font-ivy-presto">
-          //       {product.headline}
-          //     </h1>
-          //     <p className="mt-3 text-center text-gray-600 line-clamp-3">
-          //       {product.subline}
-          //     </p>
-          //   </div>
-          //   <button className="flex flex-row items-center justify-center mt-3">
-          //     <span className="mr-2 text-black">View Product</span>
-          //     <ChevronRight className="w-5 h-5 text-black" />
-          //   </button>
-          // </div>
         ))}
       </div>
 

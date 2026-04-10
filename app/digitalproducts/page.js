@@ -30,7 +30,7 @@ function DigitalProducts() {
     <div>
       <NavBar cartVisible={true} />
       <div className="pt-16 md:pt-[65px] lg:pt-24">
-        <TopBanner />
+        {/* <TopBanner /> */}
       </div>
       <DigitalProductHero />
       <DigitalProductSection1 />
