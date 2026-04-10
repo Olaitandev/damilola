@@ -12,7 +12,7 @@ import PartnershipHero from "@/components/partnershipComponents/PartnershipHero"
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-white overflow-clip">
+    <div className="bg-white overflow-clip">
       {/* Navigation Bar */}
       <NavBar />
 
