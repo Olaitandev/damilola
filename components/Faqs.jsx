@@ -37,7 +37,7 @@ function Faqs() {
 
   return (
     <section className="w-full px-5 py-16 lg:px-24">
-      <div data-aos="fade-right" data-aos-duration="1000">
+      <div data-aos="fade-right" data-aos-duration="800">
         <h2 className="text-4xl font-ivy-presto">FAQs</h2>
         <p className="mt-5 md:max-w-[600px]">
           Got Questions? Let’s Clear Them Up.
@@ -52,14 +52,14 @@ function Faqs() {
               <h3
                 className="mt-6 text-xl font-semibold"
                 data-aos="fade-right"
-                data-aos-duration="1000"
+                data-aos-duration="800"
               >
                 {item.title}
               </h3>
               <p
                 className="mt-8 md:max-w-[500px] lg:max-w-[700px]"
                 data-aos="fade-left"
-                data-aos-duration="1000"
+                data-aos-duration="800"
               >
                 {item.subtitle}
               </p>{" "}
@@ -68,7 +68,7 @@ function Faqs() {
         ))}
       </div>
 
-      <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
+      <div data-aos="fade-right" data-aos-duration="800" data-aos-delay="400">
         <h2 className="mt-10 text-2xl font-semibold">Still have questions?</h2>
         {/* <p className="mt-4 md:max-w-[600px]">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.

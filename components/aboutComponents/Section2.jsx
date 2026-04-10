@@ -14,7 +14,7 @@ function Section2() {
           <h2
             className="mt-5 text-3xl leading-tight font-ivy-presto md:text-5xl lg:text-6xl"
             data-aos="fade-up"
-            data-aos-duration="1000"
+              data-aos-duration="800"
           >
             This is me
           </h2>
@@ -22,7 +22,7 @@ function Section2() {
           <p
             className="mt-5 text-[#1E211C]/80 text-start"
             data-aos="fade-up"
-            data-aos-duration="1000"
+              data-aos-duration="800"
             data-aos-delay="100"
           >
             I know the frustration of sending hundreds of applications and
@@ -34,7 +34,7 @@ function Section2() {
           <div
             className="relative w-full max-w-[800px] mt-4"
             data-aos="fade-up"
-            data-aos-duration="1000"
+              data-aos-duration="800"
             data-aos-delay="150"
           >
             {!imageLoaded && (
@@ -60,7 +60,7 @@ function Section2() {
           <p
             className="mt-5 text-[#1E211C]/80 text-start"
             data-aos="fade-up"
-            data-aos-duration="1000"
+              data-aos-duration="800"
             data-aos-delay="200"
           >
             But once I broke into remote work, everything changed. I went from
@@ -71,7 +71,7 @@ function Section2() {
 
           <div
             data-aos="fade-up"
-            data-aos-duration="1000"
+              data-aos-duration="800"
             data-aos-delay="200"
             className="flex flex-col w-full mt-6 text-left md:flex-row md:items-start md:gap-6"
           >

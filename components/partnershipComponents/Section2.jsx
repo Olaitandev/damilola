@@ -30,7 +30,7 @@ function Section2() {
 
   return (
     <section className="px-5 pt-16 mt-16 lg:px-24">
-      <div data-aos="fade-up" data-aos-duration="1000">
+      <div data-aos="fade-up"   data-aos-duration="800">
         <h2 className="mb-12 text-3xl text-center md:mb-20 font-ivy-presto lg:text-5xl">
            How We Can Work Together
         </h2>
@@ -44,7 +44,7 @@ function Section2() {
         >
           <div
             data-aos="fade-right"
-            data-aos-duration="1000"
+              data-aos-duration="800"
             data-aos-delay="100"
           >
             <Image
@@ -57,7 +57,7 @@ function Section2() {
           </div>
           <div
             data-aos="fade-left"
-            data-aos-duration="1000"
+              data-aos-duration="800"
             data-aos-delay="100"
           >
             <h3 className="text-3xl font-ivy-presto lg:text-4xl mt-7">

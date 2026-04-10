@@ -9,7 +9,7 @@ function BookDamiSection1() {
   return (
     <section className="mb-20 overflow-x-clip">
       <div className="grid items-center grid-cols-1 gap-10 md:grid-cols-3 md:mt-10">
-        <div className="" data-aos="fade-right" data-aos-duration="1000">
+        <div className="" data-aos="fade-right"   data-aos-duration="800">
           <Image
             src="/image6.avif"
             alt="Description"
@@ -42,7 +42,7 @@ function BookDamiSection1() {
         <div
           className="relative w-full h-[420px]"
           data-aos="fade-left"
-          data-aos-duration="1000"
+            data-aos-duration="800"
         >
           {/* Top-right image */}
           <Image

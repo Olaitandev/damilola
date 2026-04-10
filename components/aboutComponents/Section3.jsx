@@ -86,7 +86,7 @@ function Section3() {
             <div
               className="flex flex-row justify-start gap-5"
               data-aos="fade-right"
-              data-aos-duration="1000"
+                data-aos-duration="800"
               
     
             >
@@ -98,7 +98,7 @@ function Section3() {
         <div
           className="md:w-1/2"
           data-aos="fade-left"
-          data-aos-duration="1000"
+            data-aos-duration="800"
        
         >
           <Image

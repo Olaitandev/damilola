@@ -68,21 +68,21 @@ function Section3() {
               className="w-[500px] h-[400px] object-cover lg:w-[500px] lg:h-[600px] rounded-lg object-top"
               priority
               data-aos="fade-up"
-              data-aos-duration="1000"
+                data-aos-duration="800"
             />
           </div>
           <div>
             <h3
               className="text-3xl font-ivy-presto lg:text-5xl mt-7"
               data-aos="fade-up"
-              data-aos-duration="1000"
+                data-aos-duration="800"
             >
               {item.title}
             </h3>
             <p
               className="font-work-sans mt-7 lg:text-xl max-w-[500px]"
               data-aos="fade-up"
-              data-aos-duration="1000"
+                data-aos-duration="800"
               data-aos-delay="200"
             >
               {item.subtitle}
@@ -90,7 +90,7 @@ function Section3() {
             <div
               className="flex flex-row items-center mt-7"
               data-aos="fade-up"
-              data-aos-duration="1000"
+                data-aos-duration="800"
               data-aos-delay="300"
             >
               <a

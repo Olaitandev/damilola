@@ -7,7 +7,7 @@ function Section1() {
       <div className="flex flex-col items-center gap-3 px-5 mx-auto lg:gap-6 md:px-10 lg:px-52 md:flex-row">
         <div
           data-aos="fade-right"
-          data-aos-duration="1000"
+            data-aos-duration="800"
           data-aos-delay="100"
         >
           <Image
@@ -20,7 +20,7 @@ function Section1() {
         </div>
         <div
           data-aos="fade-left"
-          data-aos-duration="1000"
+            data-aos-duration="800"
           data-aos-delay="100"
         >
           <h2 className="text-[23px] leading-tight md:text-2xl lg:text-4xl font-ivy-presto mt-5  lg:mt-0">

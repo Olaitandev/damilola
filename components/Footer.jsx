@@ -37,13 +37,13 @@ function Footer() {
                 height={20}
                 className="lg:h-[70px] lg:w-[70px] w-15 h-15"
                 data-aos="fade-up"
-                data-aos-duration="1000"
+                data-aos-duration="800"
               />
             </Link>
             <p
               className="mt-2 text-sm"
               data-aos="fade-up"
-              data-aos-duration="1000"
+              data-aos-duration="800"
             >
               No more waiting. Choose your next move now.
             </p>
@@ -54,7 +54,7 @@ function Footer() {
                     key={index}
                     className="flex items-center "
                     data-aos="fade-up"
-                    data-aos-duration="1000"
+                    data-aos-duration="800"
                   >
                     <Link
                       href={link.href}
@@ -73,7 +73,7 @@ function Footer() {
           <div
             className="w-full mt-6 "
             data-aos="fade-up"
-            data-aos-duration="1000"
+            data-aos-duration="800"
           >
             <p className="mt-5  text-[18px] font-semibold font-work-sans">
               subscribe
@@ -102,7 +102,7 @@ function Footer() {
           <div
             className="flex flex-wrap items-center justify-center gap-5 mr-10 md:flex-row"
             data-aos="fade-up"
-            data-aos-duration="1000"
+              data-aos-duration="800"
             data-aos-delay="200"
           >
             <Link

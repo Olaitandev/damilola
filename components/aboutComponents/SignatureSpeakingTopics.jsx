@@ -10,14 +10,14 @@ function SignatureSpeakingTopics() {
       <h2
         className="text-2xl font-bold text-center md:text-3xl lg:text-4xl font-work-sans"
         data-aos="fade-up"
-        data-aos-duration="1000"
+          data-aos-duration="800"
       >
         Signature Speaking Topics
       </h2>
       <div
         className="flex flex-col items-center justify-center mx-auto mt-15 lg:gap-10 lg:flex-row"
         data-aos="fade-up"
-        data-aos-duration="1000"
+          data-aos-duration="800"
         data-aos-delay="100"
       >
         <div className="max-w-[410px] items-center text-center gap-3 ">
@@ -98,7 +98,7 @@ function SignatureSpeakingTopics() {
         <button
           className="mt-10 bg-[#EDF296] text-black px-6 py-3 rounded-full flex items-center gap-2 mx-auto font-medium"
           data-aos="fade-up"
-          data-aos-duration="1000"
+            data-aos-duration="800"
           data-aos-delay="110"
         >
           Invite Dami to Speak

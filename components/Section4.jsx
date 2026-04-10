@@ -22,13 +22,13 @@ function Section4() {
         <div
           className="md:w-1/2"
           data-aos="fade-right"
-          data-aos-duration="1000"
+            data-aos-duration="800"
         >
           <h2 className="text-3xl leading-tight font-ivy-presto md:text-4xl lg:text-5xl">
             The Numbers Tell the Story.
           </h2>
         </div>
-        <div className="md:w-1/2" data-aos="fade-left" data-aos-duration="1000">
+        <div className="md:w-1/2" data-aos="fade-left"   data-aos-duration="800">
           <p className="font-work-sans mt-7 lg:text-xl md:max-w-[400px] lg:max-w-[700px]">
             Every figure here represents a career transformed, a platform built,
             or a room moved. This is why people trust me. Not because I talk
@@ -41,7 +41,7 @@ function Section4() {
       <div
         className="grid grid-cols-1 gap-6 pb-20 mt-10 md:grid-cols-3"
         data-aos="fade-up"
-        data-aos-duration="1000"
+          data-aos-duration="800"
         data-aos-delay="200"
       >
         {/* Tall card */}

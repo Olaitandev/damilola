@@ -20,7 +20,9 @@ export default function Home() {
   return (
     <div className="relative min-h-screen bg-white overflow-clip">
       <NavBar />
-
+      <div className="h-10 lg:h-15">
+        
+</div>
       <Hero />
 
       <Section1

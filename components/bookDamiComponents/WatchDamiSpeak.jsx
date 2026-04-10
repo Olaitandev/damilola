@@ -9,7 +9,7 @@ function WatchDamiSpeak() {
       <div>
         <h2
           data-aos="fade-up"
-          data-aos-duration="1000"
+            data-aos-duration="800"
           className="pt-20 text-3xl font-semibold text-center md:font-work-sans lg:text-5xl md:text-4xl md:pb-20 font-ivy-presto md:pt-10"
         >
           See Me in Action
@@ -18,7 +18,7 @@ function WatchDamiSpeak() {
         <div
           className="grid grid-cols-1 gap-5 px-5 mt-10 lg:px-44 lg:gap-0 md:grid-cols-2 lg:items-center lg:ml-30"
           data-aos="fade-up"
-          data-aos-duration="1000"
+            data-aos-duration="800"
         >
           {[
             {

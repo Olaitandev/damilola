@@ -71,7 +71,7 @@ function Section1({ title1, title2, title3, description }) {
         <div
           className="mb-8 md:w-1/2 lg:mb-0 md:pr-12"
           data-aos="fade-right"
-          data-aos-duration="1000"
+          data-aos-duration="800"
         >
           <span className="block w-full text-3xl font-bold leading-tight font-ivy-presto md:text-5xl lg:text-5xl text-nowrap">
             {title1}
@@ -87,7 +87,7 @@ function Section1({ title1, title2, title3, description }) {
           onSubmit={handleSubmit}
           className="flex flex-col gap-4 mt-4 md:w-1/3 lg:mt-0"
           data-aos="fade-left"
-          data-aos-duration="1000"
+          data-aos-duration="800"
         >
           <p className="font-medium font-work-sans">{description}</p>
 

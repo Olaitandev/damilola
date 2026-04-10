@@ -61,7 +61,7 @@ export default function Section1() {
         <p
           className="font-ivy-presto font-medium text-2xl  lg:text-4xl text-[#1E211C]"
           data-aos="fade-up"
-          data-aos-duration="1000"
+            data-aos-duration="800"
         >
           The shift
         </p>
@@ -71,7 +71,7 @@ export default function Section1() {
       <div
         className="relative flex justify-center mt-16"
         data-aos="fade-up"
-        data-aos-duration="1000"
+          data-aos-duration="800"
         data-aos-delay="100"
       >
         <AliceCarousel
