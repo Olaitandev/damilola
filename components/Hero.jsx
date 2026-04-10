@@ -233,10 +233,10 @@ function Hero() {
           muted={isMuted}
           playsInline
           poster="//speaker.avif" /* fallback frame while loading */
-          onCanPlay={() => setIsVideoLoaded(true)}
+          // onCanPlay={() => setIsVideoLoaded(true)}
+          onLoadedData={() => setIsVideoLoaded(true)}
           onError={() => setIsVideoLoaded(false)}
-          preload="auto"
-          style={{ border: "3px solid red" }}
+          preload="metadata"
         >
           <source
             src="https://res.cloudinary.com/dqd6beq36/video/upload/q_auto,vc_vp9,f_webm/v1775810326/hero-optimized_lm5qns.mp4"
@@ -327,7 +327,8 @@ function Hero() {
       {/* ── Hero Content ── */}
       <div className="relative z-10 flex items-center justify-center h-full">
         <div className="max-w-5xl px-4 mx-auto text-center sm:px-6 lg:px-8">
-          {!isVideoLoaded && (  <motion.h1
+          {!isVideoLoaded && (
+            <motion.h1
               className="text-3xl sm:text-6xl lg:text-[80px] font-bold text-white mb-6 font-ivy-presto leading-tight text-center"
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
@@ -345,10 +346,8 @@ function Hero() {
               </motion.span>
               <br />
               That Changes Everything
-            </motion.h1>)
-          }
-
-          
+            </motion.h1>
+          )}
         </div>
       </div>
 
