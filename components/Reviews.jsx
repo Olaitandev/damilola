@@ -82,7 +82,7 @@ function Reviews() {
       title: "Coaching Client",
       testimonial:
         "My coaching experience with Dami has truly shown me that anything is possible when you have the right guidance from someone who has walked the path before you. My goal was to land my dream job, but Dami’s coaching went beyond just career advice,she helped me grow in every aspect of my life. Thank you for always showing up, for being a great coach, for keeping me accountable, and most importantly, for helping me stay confident and believe in myself. And the best part? I landed my dream job even before our sessions were over. We did it!!!",
-      image: "/image2.avif",
+      image: "https://github.com/evilrabbit.png",
     },
     {
       id: 2,
@@ -90,7 +90,7 @@ function Reviews() {
       title: "Coaching Client",
       testimonial:
         "Joining the Peepuu Community was a game-changer for me. I had the skills and experience for an international remote role, but I didn’t know how to position myself effectively. Within weeks, I learned how to rewrite my CV for ATS, craft compelling cover letters, and optimize my LinkedIn profile. The results have been incredible. Two recruiters reached out to me directly, and I’ve got multiple interview invitations. By the 2nd month, I landed a remote job with a Canadian company.",
-      image: "/image2.avif",
+      image: "https://github.com/shadcn.png",
     },
     {
       id: 3,
@@ -98,7 +98,7 @@ function Reviews() {
       title: "Digital Product Customer",
       testimonial:
         "The best use of my money and time. The material is so rich I can’t imagine the effort it took to put it together.",
-      image: "/image2.avif",
+      image: "https://github.com/maxleiter.png",
     },
     {
       id: 4,
@@ -106,7 +106,7 @@ function Reviews() {
       title: "Brand Partner",
       testimonial:
         "Dami’s presence, energy, and knowledge made our event 10x better than we anticipated. We truly appreciate Dami and look forward to future endeavors together.",
-      image: "/image2.avif",
+      image: "/cenoa.png",
     },
     {
       id: 5,
@@ -114,15 +114,15 @@ function Reviews() {
       title: "1:1 Consultation Client",
       testimonial:
         "Dami was warm, attentive, and clear in her communication, took her time to understand me. She helped me reaffirm my potential, which made me feel comfortable enough to open up to her. This created a seamless flow in our conversation, allowing us to identify specific areas of focus to help me achieve my career goals.",
-      image: "/image2.avif",
+      image: "https://github.com/shadcn.png",
     },
     {
       id: 6,
-      name: "Adunni Foster",
+      name: "Foster",
       title: "1:1 Consultation Client      ",
       testimonial:
         "Oluwadamilola, the journey you’ve undertaken to guide professionals in channeling their inner strengths and becoming the best versions of themselves is truly commendable. Even if you don’t hear it often, know that you’re making a real impact. Well done!",
-      image: "/image2.avif",
+      image: "https://github.com/pranathip.png",
     },
     // {
     //   id: 7,

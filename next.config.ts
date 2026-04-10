@@ -1,5 +1,7 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+import type { Configuration } from "webpack";
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
   experimental: {
     optimizePackageImports: [
       "framer-motion",
@@ -11,7 +13,6 @@ const nextConfig = {
   compress: true,
   poweredByHeader: false,
 
-  // ✅ This tells Turbopack "I know what I'm doing, use webpack config"
   turbopack: {},
 
   images: {
@@ -22,12 +23,28 @@ const nextConfig = {
         hostname: "vqyyxwtacovdqzhsdafi.supabase.co",
         pathname: "/storage/v1/object/public/**",
       },
+      {
+        protocol: "https",
+        hostname: "raw.githubusercontent.com",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "avatars.githubusercontent.com",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "github.com",
+        pathname: "/**",
+      },
+ 
     ],
   },
 
-  webpack(config, { dev }) {
+  webpack(config: Configuration, { dev }: { dev: boolean }) {
     if (!dev) {
-      config.optimization.splitChunks = {
+      config.optimization!.splitChunks = {
         chunks: "all",
         cacheGroups: {
           vendor: {
@@ -44,21 +61,21 @@ const nextConfig = {
       };
     }
 
-    const fileLoaderRule = config.module.rules.find((rule) =>
-      rule.test?.test?.(".svg"),
+    const fileLoaderRule = config.module!.rules!.find((rule: any) =>
+      (rule as any).test?.test?.(".svg"),
     );
 
-    config.module.rules.push(
+    config.module!.rules!.push(
       {
-        ...fileLoaderRule,
+        ...(fileLoaderRule as any),
         test: /\.svg$/i,
         resourceQuery: /url/,
       },
       {
         test: /\.svg$/i,
-        issuer: fileLoaderRule.issuer,
+        issuer: (fileLoaderRule as any).issuer,
         resourceQuery: {
-          not: [...(fileLoaderRule.resourceQuery?.not || []), /url/],
+          not: [...((fileLoaderRule as any).resourceQuery?.not || []), /url/],
         },
         use: {
           loader: "@svgr/webpack",
@@ -78,7 +95,7 @@ const nextConfig = {
       },
     );
 
-    fileLoaderRule.exclude = /\.svg$/i;
+    (fileLoaderRule as any).exclude = /\.svg$/i;
 
     return config;
   },
