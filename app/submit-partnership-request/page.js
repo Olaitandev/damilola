@@ -10,7 +10,7 @@ import PartnershipForm from "@/components/partnershipComponents/PartnershipForm"
 
 export default function Contact() {
   return (
-    <div className="min-h-screen bg-white overflow-clip ">
+    <div className="bg-white overflow-clip ">
       <ScrollProgress />
       {/* Navigation Bar */}
       <NavBar />
@@ -19,15 +19,15 @@ export default function Contact() {
         <ContactHero />
       </AnimatedSection> */}
 
-      <AnimatedSection variant="fadeInLeft" delay={0.1}>
+  
         {/* <ContactForm /> */}
         <PartnershipForm />
-      </AnimatedSection>
 
 
-      <AnimatedSection variant="fadeInUp" delay={0.2}>
+
+
         <Footer />
-      </AnimatedSection>
+   
     </div>
   );
 }

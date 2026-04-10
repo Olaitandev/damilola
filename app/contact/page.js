@@ -9,7 +9,7 @@ import { ScrollProgress } from "@/components/animations/ScrollProgress";
 
 export default function Contact() {
   return (
-    <div className="min-h-screen bg-white overflow-clip">
+    <div className="bg-white overflow-clip">
     
       <NavBar />
 

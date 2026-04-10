@@ -103,6 +103,7 @@ function Section1({ title1, title2, title3, description }) {
             name="email"
             placeholder="Enter your email"
             value={formData.email}
+            suppressHydrationWarning
             onChange={handleChange}
             required
             disabled={isSubmitted}

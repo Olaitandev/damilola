@@ -26,8 +26,9 @@ function Brands({ className = "" }) {
       },
       { src: "/thisDay.svg", alt: "ThisDay", className: "h-full w-40" },
       { src: "/atr.svg", alt: "ATR", className: "h-full w-40" },
+      { src: "/cenoa.png", alt: "Cenoa", className: "h-[100px] w-[130px] -mt-3.5" },
     ],
-    []
+    [],
   );
 
   // Duplicate brands for seamless scrolling

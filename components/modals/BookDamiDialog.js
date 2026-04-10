@@ -226,6 +226,7 @@ const BookDamiDialog = ({ triggerText = "Book Dami", triggerClassName }) => {
                     name="email"
                     placeholder="Email"
                     value={formData.email}
+                    suppressHydrationWarning
                     onChange={handleChange}
                     className={`w-full p-2 border rounded-full focus:ring-2 focus:ring-blue-500 ${
                       errors.email ? "border-red-500" : "border-gray-300"

@@ -147,6 +147,7 @@ const ContactDialog = ({
                   name="email"
                   placeholder="Email"
                   value={formData.email}
+                  suppressHydrationWarning
                   onChange={handleChange}
                   className="w-full p-2 border border-gray-300 rounded-full focus:ring-2 focus:ring-blue-500"
                 />

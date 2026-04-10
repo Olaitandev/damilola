@@ -11,7 +11,7 @@ import PartnershipForm from "@/components/partnershipComponents/PartnershipForm"
 export default function BookDamiSM() {
   return (
     <div className="min-h-screen bg-white overflow-clip ">
-      <ScrollProgress />
+
       {/* Navigation Bar */}
       <NavBar />
 
@@ -19,14 +19,14 @@ export default function BookDamiSM() {
         <ContactHero />
       </AnimatedSection> */}
 
-      <AnimatedSection variant="fadeInLeft" delay={0.1}>
+   
         {/* <ContactForm /> */}
         <PartnershipForm />
-      </AnimatedSection>
 
-      <AnimatedSection variant="fadeInUp" delay={0.2}>
+
+
         <Footer />
-      </AnimatedSection>
+
     </div>
   );
 }
