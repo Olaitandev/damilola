@@ -17,37 +17,23 @@ export default function About() {
       <NavBar />
 
       <AboutHero />
-      {/* </AnimatedSection> */}
 
-      {/* Section 1 */}
-      {/* <AnimatedSection variant="fadeInLeft" delay={0.1}> */}
       <Section1 />
-      {/* </AnimatedSection> */}
 
-      {/* Section 2 */}
-      {/* <AnimatedSection variant="fadeInRight" delay={0.1}> */}
       <Section2 />
-      {/* </AnimatedSection> */}
 
-      {/* Section 3  Random facts about me*/}
-      {/* <AnimatedSection variant="scaleIn" delay={0.1}> */}
       <Section3 />
-      {/* </AnimatedSection> */}
 
-      {/* brands */}
-      {/* <AnimatedSection variant="fadeInUp" delay={0.1}> */}
       <Brands />
-      {/* </AnimatedSection> */}
 
-      {/* what I bring */}
-      {/* <AnimatedSection variant="fadeInLeft" delay={0.1}> */}
+
+
       <WhatiBring />
-      {/* </AnimatedSection> */}
 
-      {/* Signature Speaking Topics */}
-      {/* <AnimatedSection variant="fadeInRight" delay={0.1}> */}
+
+   
       <SignatureSpeakingTopics />
-      {/* </AnimatedSection> */}
+
 
  
 
