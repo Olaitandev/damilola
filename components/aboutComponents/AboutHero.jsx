@@ -23,12 +23,12 @@ function AboutHero() {
       </div>
 
       {/* Content Container */}
-      <div className="relative z-10 flex flex-col justify-between h-full p-10 pt-20 md:p-10 lg:p-20">
+      <div className="relative z-10 flex flex-col justify-between h-full p-10 pt-20 mx-auto md:p-10 lg:py-20 lg:max-w-7xl">
         <div className="flex-shrink-0">
           <h1
             className="text-4xl sm:text-6xl mt-4 md:mt-10 lg:text-[90px] font-bold text-white font-ivy-presto leading-tight italic"
             data-aos="fade-up"
-              data-aos-duration="800"
+            data-aos-duration="800"
           >
             Hi, I’m Dami
           </h1>
@@ -39,7 +39,7 @@ function AboutHero() {
           <div
             className="max-w-[650px] text-left"
             data-aos="fade-up"
-              data-aos-duration="800"
+            data-aos-duration="800"
             data-aos-delay="200"
           >
             <p className="text-lg leading-relaxed text-white md:text-xl lg:text-2xl font-work-sans">

@@ -145,7 +145,7 @@ function Reviews() {
   const secondColumn = testimonials.slice(4, 8);
 
   return (
-    <section className="bg-[#FEFDFD] w-full px-5 lg:px-48 py-16">
+    <section className="bg-[#FEFDFD] w-full px-5 max-w-7xl mx-auto py-16">
       <div className="flex flex-col items-center justify-between lg:flex-row">
         <div className="max-w-[500px]">
           {/* <p className="text-2xl">The Proof is Everywhere</p> */}

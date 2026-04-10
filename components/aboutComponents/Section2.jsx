@@ -9,7 +9,7 @@ function Section2() {
 
   return (
     <section className="w-full bg-[#ffebe0] bg-[url('/imageBg.svg')] bg-no-repeat bg-cover bg-center">
-      <div className="max-w-5xl px-5 py-16 mx-auto lg:px-10">
+      <div className="px-5 py-16 mx-auto max-w-7xl">
         <div className="flex flex-col items-center max-w-3xl mx-auto">
           <h2
             className="mt-5 text-3xl leading-tight font-ivy-presto md:text-5xl lg:text-6xl"

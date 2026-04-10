@@ -26,7 +26,7 @@ function Hero() {
       <div className="absolute inset-0 z-0">
         <video
           ref={videoRef}
-          className="w-full h-full object-cover"
+          className="object-cover w-full h-full"
           autoPlay
           loop
           muted={isMuted}
@@ -54,7 +54,7 @@ function Hero() {
       {/* Video Controls */}
       <button
         onClick={toggleMute}
-        className="absolute top-20 right-4 z-20 bg-black/30 backdrop-blur-sm text-white p-3 rounded-full hover:bg-black/50 transition-all duration-300 border border-white/20"
+        className="absolute z-20 p-3 text-white transition-all duration-300 border rounded-full top-20 right-4 bg-black/30 backdrop-blur-sm hover:bg-black/50 border-white/20"
         aria-label={isMuted ? "Unmute video" : "Mute video"}
       >
         {isMuted ? (
@@ -95,8 +95,8 @@ function Hero() {
       </button>
 
       {/* Hero Content */}
-      <div className="relative z-10 flex items-center justify-center h-full">
-        <div className="text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+      <div className="relative z-10 flex items-center justify-center h-full ">
+        <div className="max-w-4xl px-4 mx-auto text-center sm:px-6 lg:px-8">
           {/* Main Heading */}
           <h1 className="text-4xl sm:text-6xl lg:text-[90px] font-bold text-white mb-6 font-ivy-presto leading-tight">
             Book <span className="text-[#FFDECE]">Dami</span> to
@@ -104,18 +104,18 @@ function Hero() {
           </h1>
 
           {/* Subtitle */}
-          {/* <p className="text-xl sm:text-2xl text-gray-200 mb-12 font-work-sans font-light max-w-2xl mx-auto leading-relaxed">
+          {/* <p className="max-w-2xl mx-auto mb-12 text-xl font-light leading-relaxed text-gray-200 sm:text-2xl font-work-sans">
             Experience the power of modern web development with beautiful
             typography and seamless user interactions.
           </p> */}
 
           {/* CTA Buttons */}
-          {/* <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button className="group bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-2xl font-work-sans">
+          {/* <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <button className="px-8 py-4 font-semibold text-white transition-all duration-300 transform rounded-full group bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 hover:scale-105 hover:shadow-2xl font-work-sans">
               <span className="flex items-center">
                 Explore Features
                 <svg
-                  className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform"
+                  className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -129,11 +129,11 @@ function Hero() {
                 </svg>
               </span>
             </button>
-            <button className="group bg-white/10 backdrop-blur-md border border-white/30 text-white font-semibold py-4 px-8 rounded-full hover:bg-white/20 transition-all duration-300 transform hover:scale-105 font-work-sans">
+            <button className="px-8 py-4 font-semibold text-white transition-all duration-300 transform border rounded-full group bg-white/10 backdrop-blur-md border-white/30 hover:bg-white/20 hover:scale-105 font-work-sans">
               <span className="flex items-center">
                 Watch Demo
                 <svg
-                  className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform"
+                  className="w-5 h-5 ml-2 transition-transform group-hover:scale-110"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"

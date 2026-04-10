@@ -5,29 +5,29 @@ import { FaAngleRight } from "react-icons/fa";
 
 function WatchDamiSpeak() {
   return (
-    <section className="bg-[#FFF7F3]  relative pb-20 lg:pt-20 ">
-      <div>
+    <section className="bg-[#FFF7F3] relative pb-20 lg:pt-20 ">
+      <div className="mx-auto max-w-7xl">
         <h2
           data-aos="fade-up"
-            data-aos-duration="800"
+          data-aos-duration="800"
           className="pt-20 text-3xl font-semibold text-center md:font-work-sans lg:text-5xl md:text-4xl md:pb-20 font-ivy-presto md:pt-10"
         >
           See Me in Action
         </h2>
 
         <div
-          className="grid grid-cols-1 gap-5 px-5 mt-10 lg:px-44 lg:gap-0 md:grid-cols-2 lg:items-center lg:ml-30"
+          className="flex flex-col gap-5 px-5 mx-auto mt-5 md:flex-row lg:gap-20 lg:items-center md:justify-center"
           data-aos="fade-up"
-            data-aos-duration="800"
+          data-aos-duration="800"
         >
           {[
             {
-              src: "/image9.jpg",
+              src: "/image9.avif",
               title: "The Future of Work is Now",
               href: "https://africatechradio.com/why-you-are-not-getting-that-remote-job/",
             },
             {
-              src: "/image10.jpg",
+              src: "/image10.avif",
               title: "How Remote Work is Changing Africa’s Talent Story",
               href: "https://www.youtube.com/watch?v=sM7cq1c7--g",
             },
@@ -39,14 +39,14 @@ function WatchDamiSpeak() {
           ].map((video, i) => (
             <a
               key={i}
-              className="relative w-full lg:w-[60%] h-[100%] lg:h-[90%] "
+              className="relative w-full  h-[100%] lg:h-[700px] lg:w-[400px]"
               href={video.href}
               target="_blank"
               rel="noopener noreferrer"
             >
               <Image
                 src={video.src}
-                className="w-full h-[100%]  object-cover rounded-md"
+                className="w-full h-[500px] lg:h-[700px]  object-cover rounded-md"
                 height={400}
                 width={200}
                 alt={video.title}

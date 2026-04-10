@@ -5,7 +5,7 @@ import React, { useState, useEffect } from "react";
 function BookDamiSlider() {
   const posts = [
     {
-      image: "/image13.avif",
+      image: "https://github.com/evilrabbit.png",
       alt: "Book Dami",
       title: "She is a must follow",
       subtitle: "Thought Leader",
@@ -14,7 +14,7 @@ function BookDamiSlider() {
       role: "Head of Compliance, Microsoft Inc",
     },
     {
-      image: "/image14.avif",
+      image: "https://github.com/shadcn.png",
       alt: "Book Dami 2",
       title: "Inspiring Speaker",
       subtitle: "Visionary",
@@ -23,7 +23,7 @@ function BookDamiSlider() {
       role: "CEO, TechCabal",
     },
     {
-      image: "/image10.avif",
+      image: "https://github.com/evilrabbit.png",
       alt: "Book Dami 3",
       title: "Empowering Mentor",
       subtitle: "Guide",
@@ -55,7 +55,7 @@ function BookDamiSlider() {
 
   return (
     <section className="pt-20 pb-20">
-      <div className="flex items-center justify-between px-3 lg:px-[200px]">
+      <div className="flex items-center justify-between px-3 mx-auto lg:max-w-7xl">
         <button
           onClick={goToPrev}
           className="bg-[#F2F2F2] p-2 bg-opacity-80 hover:bg-opacity-100 text-gray-800 font-bold rounded shadow"

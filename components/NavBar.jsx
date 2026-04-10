@@ -69,7 +69,7 @@ const NavBar = ({ cartVisible = false }) => {
 
   return (
     <nav className="fixed z-50 w-full bg-white border-b border-gray-200 shadow-lg">
-      <div className="flex items-center justify-between h-16 px-5 lg:h-24 lg:px-30">
+      <div className="flex items-center justify-between h-16 px-5 mx-auto lg:h-24 lg:max-w-[1440px]">
         {/* Logo */}
         <Link
           href="/"

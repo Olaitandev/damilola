@@ -1,14 +1,15 @@
 import React from "react";
 import CollaborateModal from "./CollaborateModal";
+import Image from "next/image";
 
 function LetsCollaborate() {
   return (
     <section className="relative bg-[#27221F] w-full px-5 lg:px-24 pt-16 pb-16 lg:pb-24 overflow-hidden">
       <div className="absolute inset-0 w-full h-full">
-        <img
-          src="/image4.svg"
+        <Image
+          src="/thisisme.avif"
           alt="Background"
-          className="w-full h-full object-cover object-center opacity-25"
+          className="object-cover object-center w-full h-full opacity-25"
         />
       </div>
       <div className="relative flex flex-col items-center justify-center pt-10">

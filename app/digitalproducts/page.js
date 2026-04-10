@@ -27,11 +27,10 @@ function DigitalProducts() {
     getProducts();
   }, []);
   return (
-    <div>
-      <NavBar cartVisible={true} />
-      <div className="pt-16 md:pt-[65px] lg:pt-24">
-        {/* <TopBanner /> */}
-      </div>
+    <div className="overflow-x-clip">
+      {/* <NavBar cartVisible={true} /> */}
+      <NavBar  />
+      <div className="pt-16 md:pt-[65px] lg:pt-24">{/* <TopBanner /> */}</div>
       <DigitalProductHero />
       <DigitalProductSection1 />
       <Reviews />

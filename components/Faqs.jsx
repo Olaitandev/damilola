@@ -36,7 +36,7 @@ function Faqs() {
   ];
 
   return (
-    <section className="w-full px-5 py-16 lg:px-24">
+    <section className="w-full px-5 py-16 mx-auto max-w-7xl">
       <div data-aos="fade-right" data-aos-duration="800">
         <h2 className="text-4xl font-ivy-presto">FAQs</h2>
         <p className="mt-5 md:max-w-[600px]">

@@ -65,15 +65,11 @@ function Section1({ title1, title2, title3, description }) {
   const isLoading = status === "loading";
 
   return (
-    <section className="bg-[#FFF7F3] w-full lg:px-48">
-      <div className="flex flex-col gap-8 px-4 py-16 md:flex-row md:items-center md:justify-between lg:px-32 lg:py-24">
+    <section className="bg-[#FFF7F3] w-full">
+      <div className="grid w-full grid-cols-1 gap-12 px-6 py-16 mx-auto md:grid-cols-2 max-w-7xl md:px-12 lg:py-24 md:gap-16 md:items-center">
         {/* Headline */}
-        <div
-          className="mb-8 md:w-1/2 lg:mb-0 md:pr-12"
-          data-aos="fade-right"
-          data-aos-duration="800"
-        >
-          <span className="block w-full text-3xl font-bold leading-tight font-ivy-presto md:text-5xl lg:text-5xl text-nowrap">
+        <div data-aos="fade-right" data-aos-duration="800">
+          <span className="block text-3xl font-bold leading-tight font-ivy-presto md:text-5xl lg:text-5xl">
             {title1}
             <br />
             {title2}
@@ -85,7 +81,7 @@ function Section1({ title1, title2, title3, description }) {
         {/* Form */}
         <form
           onSubmit={handleSubmit}
-          className="flex flex-col gap-4 mt-4 md:w-1/3 lg:mt-0"
+          className="flex flex-col gap-4"
           data-aos="fade-left"
           data-aos-duration="800"
         >

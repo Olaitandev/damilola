@@ -7,9 +7,9 @@ import BookDamiDialog from "../modals/BookDamiDialog";
 
 function BookDamiSection1() {
   return (
-    <section className="mb-20 overflow-x-clip">
+    <section className="mx-auto mb-20 max-w-[1440px]">
       <div className="grid items-center grid-cols-1 gap-10 md:grid-cols-3 md:mt-10">
-        <div className="" data-aos="fade-right"   data-aos-duration="800">
+        <div className="" data-aos="fade-right" data-aos-duration="800">
           <Image
             src="/image6.avif"
             alt="Description"
@@ -19,7 +19,7 @@ function BookDamiSection1() {
           />
         </div>
 
-        <div className="px-5 md:px-5 lg:px-16 mt-5 md:max-w-[300px] lg:max-w-[700px]">
+        <div className="px-5   mt-5 md:max-w-[300px] lg:max-w-[700px]">
           <h2 className="text-2xl font-ivy-presto lg:text-4xl">
             Bring Clarity to the Future of Work — Today
           </h2>
@@ -42,7 +42,7 @@ function BookDamiSection1() {
         <div
           className="relative w-full h-[420px]"
           data-aos="fade-left"
-            data-aos-duration="800"
+          data-aos-duration="800"
         >
           {/* Top-right image */}
           <Image

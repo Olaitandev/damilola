@@ -58,7 +58,7 @@ function DigitalProductSection1() {
 
   if (loading) {
     return (
-      <section className="w-full px-5 pt-16 pb-16 mx-auto lg:px-48 lg:pb-24">
+      <section className="w-full px-5 pt-16 pb-16 mx-auto lg:max-w-7xl lg:pb-24">
         <div className="flex items-center justify-center">
           <div className="text-center">
             <div className="w-8 h-8 mx-auto mb-4 border-4 border-gray-300 rounded-full animate-spin border-t-green-600"></div>
@@ -71,7 +71,7 @@ function DigitalProductSection1() {
 
   if (error) {
     return (
-      <section className="w-full px-5 pt-16 pb-16 lg:px-24 lg:pb-24">
+      <section className="w-full px-5 pt-16 pb-16 mx-auto lg:max-w-7xl lg:pb-24">
         <div className="flex items-center justify-center">
           <div className="text-center">
             <p className="text-lg text-red-500">Error: {error}</p>
@@ -88,7 +88,7 @@ function DigitalProductSection1() {
   }
 
   return (
-    <section className="w-full px-5 pt-16 pb-16 lg:px-48 lg:pb-24">
+    <section className="w-full px-5 pt-16 pb-16 mx-auto lg:max-w-7xl lg:pb-24">
       <div className="flex items-center justify-center mb-12">
         <div className="relative w-full md:max-w-1/2">
           <input
@@ -115,11 +115,11 @@ function DigitalProductSection1() {
       </div>
 
       {/* Products Grid */}
-      <div className="grid justify-center grid-cols-1 gap-20 mx-auto md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid justify-center grid-cols-1 gap-10 mx-auto md:grid-cols-2 lg:grid-cols-3">
         {filteredProducts.map((product) => (
           <Card
             key={product.id}
-            className="relative flex flex-col pt-0 overflow-hidden transition-shadow duration-300 border-none hover:shadow-lg w-[405px] h-auto "
+            className="relative flex flex-col w-auto h-auto pt-0 overflow-hidden transition-shadow duration-300 border-none hover:shadow-lg "
           >
             {product.label && (
               <div className="absolute px-2 py-1 bg-[#FFEEE6] top-2 left-2 rounded-xl">
@@ -145,9 +145,9 @@ function DigitalProductSection1() {
             </CardContent>
             <CardFooter className="">
               <a
-                  href={product.selar_url}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                href={product.selar_url}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center justify-center w-full px-6 py-3 font-normal text-white transition-all duration-300 ease-in-out hover:scale-105 focus:outline-none "
               >
                 <span className="mr-2 text-black">View Product</span>
@@ -155,9 +155,6 @@ function DigitalProductSection1() {
               </a>
             </CardFooter>
           </Card>
-
-    
-
         ))}
       </div>
 

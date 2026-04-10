@@ -11,7 +11,7 @@ import BookDamiDialog from "@/components/modals/BookDamiDialog";
 
 function page() {
   return (
-    <div>
+    <div className="overflow-x-clip">
       <NavBar />
       <BookDamiHero />
 

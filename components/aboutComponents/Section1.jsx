@@ -55,7 +55,7 @@ export default function Section1() {
 
 
   return (
-    <section className="bg-[#FFFFFF] w-full px-5 lg:px-24 py-16">
+    <section className="bg-[#FFFFFF] w-full px-5 lg:max-w-7xl mx-auto py-16">
       {/* Heading */}
       <div className="flex flex-col items-center justify-center">
         <p

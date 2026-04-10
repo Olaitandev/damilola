@@ -20,11 +20,11 @@ function ContactHero() {
       </div>
 
       {/* Content Container */}
-      <div className="relative z-10 flex flex-col justify-between h-full p-10 pt-28 md:p-10 md:pt-60 lg:p-12 top-20">
+      <div className="relative z-10 flex flex-col justify-between h-full p-10 pt-28 md:p-10 md:pt-60 lg:p-12 top-20 ">
         {/* Lorem text - Bottom Right */}
         <div className="flex lg:ml-[550px]">
-          <div className="max-w-[800px] text-left ">
-            <h2 className="font-ivy-presto text-4xl lg:text-[90px] text-white lg:text-nowrap">
+          <div className="mx-auto text-left max-w-7xl">
+            <h2 className="text-4xl text-white font-ivy-presto lg:text-nowrap">
               Ready to Work With Me
             </h2>
             <p className="text-sm text-white md:text-lg lg:text-xl font-work-sans lg:leading-relaxed md:mt-3">

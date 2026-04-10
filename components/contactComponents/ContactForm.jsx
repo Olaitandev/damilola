@@ -110,14 +110,14 @@ function ContactForm() {
   const isLoading = status === "loading";
 
   return (
-    <section className="bg-[#FFFFFF] w-full px-5 md:px-[100px] lg:px-[500px] py-16">
+    <section className="bg-[#FFFFFF] w-full px-5  lg:max-w-7xl mx-auto py-16">
       <AnimatedText>
-        <h2 className="text-3xl font-work-sans md:text-4xl lg:text-5xl">
+        <h2 className="max-w-lg mx-auto text-3xl font-work-sans md:text-4xl lg:text-4xl">
           Let's Connect
         </h2>
       </AnimatedText>
 
-      <div className="flex flex-col mt-7">
+      <div className="flex flex-col max-w-lg mx-auto mt-7">
         <AnimatedText delay={0.2}>
           <p className="text-sm md:text-base lg:text-lg">
             Need a remote job hunting strategy? Seeking Partnerships and

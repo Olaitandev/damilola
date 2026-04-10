@@ -16,7 +16,7 @@ function Section4() {
   // { value: "", label: "" },
 
   return (
-    <section className="w-full px-5 mt-32 lg:mt-40 lg:px-48">
+    <section className="w-full px-5 mx-auto mt-32 lg:mt-40 max-w-7xl">
       {/* Top text */}
       <div className="flex flex-col md:flex-row md:items-center lg:gap-20 md:gap-10">
         <div

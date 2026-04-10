@@ -26,7 +26,7 @@ function Footer() {
   return (
     <footer className="w-full bg-white">
       <hr className="outline-[0.5px]" />
-      <div className="px-5 py-16 lg:px-24">
+      <div className="px-5 py-16 mx-auto lg:max-w-[1440px]">
         <div className="flex flex-col gap-10 lg:flex-row lg:justify-between lg:items-center">
           <div className="lg:min-w-[800px]">
             <Link href="/" className="flex items-center">
@@ -102,7 +102,7 @@ function Footer() {
           <div
             className="flex flex-wrap items-center justify-center gap-5 mr-10 md:flex-row"
             data-aos="fade-up"
-              data-aos-duration="800"
+            data-aos-duration="800"
             data-aos-delay="200"
           >
             <Link

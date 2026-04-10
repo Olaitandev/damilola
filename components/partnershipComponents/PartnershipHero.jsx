@@ -42,19 +42,19 @@ function PartnershipHero({
 
   return (
     <div>
-      <section className="bg-[#27221F] w-full px-5 lg:px-24 pt-16 pb-16 lg:pb-24">
-        <div className="flex flex-col items-center justify-center pt-10 lg:pt-20">
+      <section className="bg-[#27221F] w-full px-5 pt-16 pb-16 lg:pb-24">
+        <div className="flex flex-col items-center justify-center pt-10 mx-auto lg:max-w-7xl lg:pt-20">
           <h2
             className="text-4xl text-center text-white lg:text-5xl font-ivy-presto lg:max-w-full"
             data-aos="fade-up"
-              data-aos-duration="800"
+            data-aos-duration="800"
           >
             {title}
           </h2>
 
           <p
             data-aos="fade-up"
-              data-aos-duration="800"
+            data-aos-duration="800"
             data-aos-delay="200"
             className="mt-3 text-sm font-light text-center text-white md:mt-5 md:text-md lg:text-xl font-work-sans md:px-14 lg:px-20"
           >
@@ -64,7 +64,7 @@ function PartnershipHero({
           <div
             className="flex flex-row gap-4"
             data-aos="fade-up"
-              data-aos-duration="800"
+            data-aos-duration="800"
             data-aos-delay="400"
           >
             {DialogComponent && isLargeScreen ? (

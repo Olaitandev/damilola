@@ -4,14 +4,14 @@ import BookDamiDialog from "@/components/modals/BookDamiDialog";
 
 function HandPickYourTopic() {
   return (
-    <section className="relative w-full px-5 pt-16 pb-16 mt-20 bg-white lg:px-52 lg:pb-24">
+    <section className="relative w-full px-5 pt-16 pb-16 mx-auto mt-20 bg-white lg:max-w-7xl lg:pb-24">
       <div>
         <h2 className="pt-20 text-3xl font-semibold leading-tight text-center md:font-work-sans lg:text-4xl md:text-4xl md:pb-20 font-ivy-presto md:pt-10">
           Topics That Shape Work, <br />
           Business, and Careers
         </h2>
 
-        <div className="flex flex-col mt-5 md:flex-row md:items-center md:gap-5 lg:gap-10">
+        <div className="flex flex-col mt-5 md:flex-row md:items-center md:gap-5 lg:gap-10 ">
           <div className="">
             {/* <h3 className="relative text-5xl text-center font-ivy-presto top-5 lg:text-right lg:-right-8">
               01

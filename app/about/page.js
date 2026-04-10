@@ -6,11 +6,8 @@ import Section3 from "@/components/aboutComponents/Section3";
 import Brands from "@/components/Brands";
 import Footer from "@/components/Footer";
 import Section11 from "@/components/Section1";
-import Book1on1 from "@/components/Book1on1";
 import SignatureSpeakingTopics from "@/components/aboutComponents/SignatureSpeakingTopics";
 import WhatiBring from "@/components/aboutComponents/WhatiBring";
-import { AnimatedSection } from "@/components/animations/AnimatedSection";
-import { ScrollProgress } from "@/components/animations/ScrollProgress";
 import PartnershipHero from "@/components/partnershipComponents/PartnershipHero";
 
 export default function About() {
@@ -52,15 +49,7 @@ export default function About() {
       <SignatureSpeakingTopics />
       {/* </AnimatedSection> */}
 
-      {/* <AnimatedSection variant="scaleIn" delay={0.1}> */}
-      {/* <Book1on1
-        title="Ready to Build Your Global Career?"
-        description="Don’t Just read my story. Start building yours today. Whether you want step-by-step coaching, proven digital tools, or direct strategy from me, the next move is yours"
-        button1Text="Join Coaching"
-        button2Text="Explore Digital Products"
-        button1Route="/"
-        button2Route="/digitalproducts"
-      /> */}
+ 
 
       <PartnershipHero
         title="Ready to Build Your Global Career?"

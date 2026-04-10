@@ -11,9 +11,9 @@ function SocialLinks() {
   return (
     <section
       className="
-        bg-[#FFEBE0] w-full px-5 lg:px-20  py-16 flex flex-col items-center  gap-8"
+        bg-[#FFEBE0] w-full px-5  py-16 flex flex-col items-center  gap-8"
     >
-      <div className="flex flex-col gap-8 lg:flex-row md:gap-10 lg:gap-18">
+      <div className="flex flex-col gap-8 mx-auto lg:flex-row md:gap-10 lg:gap-18 max-w-7xl">
         <Link
           href="mailto:info@dami.com"
           className="flex flex-row items-center gap-3 transition-opacity lg:flex-col hover:opacity-70 lg:items-start"

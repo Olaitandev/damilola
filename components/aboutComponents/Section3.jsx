@@ -22,8 +22,8 @@ import { HiOutlinePuzzlePiece } from "react-icons/hi2";
 
 function Section3() {
   return (
-    <section className="px-5 pt-16 pb-20 lg:px-48">
-      <div className="flex flex-col items-center gap-10 md:flex-row lg:gap-32">
+    <section className="px-5 pt-16 pb-20 mx-auto lg:max-w-7xl">
+      <div className="flex flex-col items-center gap-10 md:flex-row ">
         <div className="md:w-1/2">
           <h2
             className="text-3xl font-bold font-ivy-presto "

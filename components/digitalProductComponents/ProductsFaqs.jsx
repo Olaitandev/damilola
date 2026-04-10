@@ -7,7 +7,7 @@ function ProductsFaqs() {
       title:
         "I'm not sure which product to start with. How do I choose the right one?",
       subtitle:
-        "It depends on where you are in your job search:  <br/> • Want everything in one place? Start with the Premium Remote Job Kit or the Bundle. You'll get the full system for resumes, LinkedIn, applications, and interviews; no guesswork, just results. This is what most clients choose when they want a complete fix. <br/> • Struggling to get interviews? Go for Remote Ready™. It helps you stand out, get noticed by recruiters, and start landing callbacks. <br/> • Already getting interviews? Choose the Interview Prep Masterclass. It's designed to turn interviews into actual job offers. <br/> Each option gives you a proven path forward. The key is to start with the product that matches your current challenge, then grow from there.",
+        "       It depends on where you are in your job search:  <br/> <br/> • Want everything in one place? Start with the Premium Remote Job Kit or the Bundle. You'll get the full system for resumes, LinkedIn, applications, and interviews; no guesswork, just results. This is what most clients choose when they want a complete fix. <br/><br/>  • Struggling to get interviews? Go for Remote Ready™. It helps you stand out, get noticed by recruiters, and start landing callbacks. <br/><br/>  • Already getting interviews? Choose the Interview Prep Masterclass. It's designed to turn interviews into actual job offers. <br/><br/>  Each option gives you a proven path forward. The key is to start with the product that matches your current challenge, then grow from there.",
     },
     {
       id: 2,
@@ -36,7 +36,7 @@ function ProductsFaqs() {
   ];
 
   return (
-    <section className="w-full px-5 py-16 lg:px-48">
+    <section className="w-full px-5 py-16 mx-auto lg:max-w-7xl">
       <div>
         <h2 className="text-4xl font-ivy-presto">FAQs</h2>
         <p className="mt-5 md:max-w-[600px]">

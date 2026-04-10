@@ -15,7 +15,7 @@ export default function WhatiBring() {
   ];
 
   return (
-    <section className="w-full px-5 py-16 lg:px-48">
+    <section className="w-full px-5 py-16 mx-auto lg:max-w-7xl">
       <div>
         <h2 className="font-ivy-presto text-3xl lg:text-5xl leading-tight text-center text-[#1E211C]">
           What I bring to you
@@ -29,7 +29,7 @@ export default function WhatiBring() {
                   // href="#"
                   className={`text-black transition-all duration-300 hover:no-underline ${
                     activeService === service.id
-                      ? "opacity-100 text-2xl lg:text-4xl font-ivy-presto"
+                      ? "opacity-100 text-2xl lg:text-3xl font-ivy-presto"
                       : "text-xl opacity-15 hover:opacity-100 lg:text-3xl lg:hover:font-ivy-presto lg:hover:text-2xl font-ivy-presto md:font-work-sans"
                   }`}
                   onMouseEnter={() => {

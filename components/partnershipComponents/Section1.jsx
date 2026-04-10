@@ -4,7 +4,7 @@ import React from "react";
 function Section1() {
   return (
     <div className="mt-10">
-      <div className="flex flex-col items-center gap-3 px-5 mx-auto lg:gap-6 md:px-10 lg:px-52 md:flex-row">
+      <div className="flex flex-col items-center gap-3 px-5 mx-auto lg:gap-6 md:px-10 lg:max-w-7xl md:flex-row">
         <div
           data-aos="fade-right"
             data-aos-duration="800"
