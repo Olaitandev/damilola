@@ -1,4 +1,3 @@
-import type { Configuration } from "webpack";
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
@@ -38,13 +37,13 @@ const nextConfig: NextConfig = {
         hostname: "github.com",
         pathname: "/**",
       },
- 
+
     ],
   },
 
-  webpack(config: Configuration, { dev }: { dev: boolean }) {
+  webpack(config, { dev }) {
     if (!dev) {
-      config.optimization!.splitChunks = {
+      config.optimization.splitChunks = {
         chunks: "all",
         cacheGroups: {
           vendor: {
@@ -61,21 +60,21 @@ const nextConfig: NextConfig = {
       };
     }
 
-    const fileLoaderRule = config.module!.rules!.find((rule: any) =>
-      (rule as any).test?.test?.(".svg"),
+    const fileLoaderRule = config.module.rules.find((rule: any) =>
+      rule?.test?.test?.(".svg"),
     );
 
-    config.module!.rules!.push(
+    config.module.rules.push(
       {
-        ...(fileLoaderRule as any),
+        ...fileLoaderRule,
         test: /\.svg$/i,
         resourceQuery: /url/,
       },
       {
         test: /\.svg$/i,
-        issuer: (fileLoaderRule as any).issuer,
+        issuer: fileLoaderRule?.issuer,
         resourceQuery: {
-          not: [...((fileLoaderRule as any).resourceQuery?.not || []), /url/],
+          not: [...(fileLoaderRule?.resourceQuery?.not || []), /url/],
         },
         use: {
           loader: "@svgr/webpack",
@@ -95,7 +94,7 @@ const nextConfig: NextConfig = {
       },
     );
 
-    (fileLoaderRule as any).exclude = /\.svg$/i;
+    fileLoaderRule.exclude = /\.svg$/i;
 
     return config;
   },
