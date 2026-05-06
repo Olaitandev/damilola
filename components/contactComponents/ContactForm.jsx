@@ -10,12 +10,14 @@ const EDGE_FN_URL =
 
 const SUPABASE_ANON_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
+// Add to INITIAL_FORM
 const INITIAL_FORM = {
   name: "",
   email: "",
   phone: "",
   message: "",
   subscribe: false,
+  _honey: "", // honeypot
 };
 
 // ── Client-side validation (mirrors edge function rules) ────────────────────
@@ -52,6 +54,7 @@ function ContactForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setServerError("");
+    if (formData._honey) return;
 
     // Client-side validation first
     const errors = validateForm(formData);
@@ -204,7 +207,16 @@ function ContactForm() {
                 </p>
               )}
             </div>
-
+            {/* Honeypot - hidden from humans */}
+            <input
+              type="text"
+              name="_honey"
+              value={formData._honey}
+              onChange={handleInputChange}
+              style={{ display: "none" }}
+              tabIndex={-1}
+              autoComplete="off"
+            />
             {/* Terms checkbox */}
             <div className="flex flex-row items-start gap-2">
               <input
