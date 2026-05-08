@@ -95,6 +95,7 @@
 //     );
 //   }
 // }
+
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 import { supabaseAdmin } from "@/lib/supabase";
@@ -130,7 +131,6 @@ const BURNER_DOMAINS = new Set([
   "spamex.com",
   "getonemail.com",
   "mailnew.com",
-  "throwam.com",
   "filzmail.com",
   "objectmail.com",
   "obobbo.com",
@@ -141,7 +141,6 @@ const BURNER_DOMAINS = new Set([
   "supergreatmail.com",
   "supermailer.jp",
   "thisisnotmyrealemail.com",
-  "throwam.com",
   "trash-mail.com",
   "wegwerfmail.de",
   "wegwerfmail.net",
@@ -159,20 +158,18 @@ const isSpamEmail = (email) => {
   const local = email.slice(0, atIndex);
   const domain = email.slice(atIndex + 1).toLowerCase();
 
-  // Block known burner domains
   if (BURNER_DOMAINS.has(domain)) return true;
 
-  // Block excessive dots in local part (bot pattern)
   const dotCount = (local.match(/\./g) || []).length;
   return dotCount >= 3;
 };
 
 /**
- * Flags messages that are pure random alphanumeric strings with no spaces —
- * a hallmark of automated bot submissions.
+ * Flags pure random alphanumeric strings with no spaces —
+ * used to catch bot-generated names and messages.
  */
-const isSpamMessage = (msg) => {
-  const trimmed = msg.trim();
+const isRandomString = (str) => {
+  const trimmed = str.trim();
   return (
     !/\s/.test(trimmed) && /^[A-Za-z0-9]+$/.test(trimmed) && trimmed.length > 10
   );
@@ -204,8 +201,8 @@ export async function POST(req) {
       return NextResponse.json({ success: true }, { status: 200 });
     }
 
-    // 4. Spam message check (random alphanumeric string)
-    if (isSpamMessage(message)) {
+    // 4. Spam name or message check (random alphanumeric strings)
+    if (isRandomString(name) || isRandomString(message)) {
       return NextResponse.json({ success: true }, { status: 200 });
     }
 
