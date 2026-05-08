@@ -20,6 +20,23 @@ const INITIAL_FORM = {
   _honey: "", // honeypot
 };
 
+
+const isRandomString = (str) => {
+  const trimmed = str.trim();
+  return (
+    !/\s/.test(trimmed) && /^[A-Za-z0-9]+$/.test(trimmed) && trimmed.length > 10
+  );
+};
+
+const isSpamEmail = (email) => {
+  const atIndex = email.lastIndexOf("@");
+  if (atIndex === -1) return false;
+  const local = email.slice(0, atIndex);
+  const dotCount = (local.match(/\./g) || []).length;
+  return dotCount >= 3;
+};
+
+
 // ── Client-side validation (mirrors edge function rules) ────────────────────
 function validateForm(data) {
   const errors = {};
@@ -54,9 +71,17 @@ function ContactForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setServerError("");
+   
+
+    // 1. Honeypot — silent drop
     if (formData._honey) return;
 
-    // Client-side validation first
+    // 2. Spam name / email / message — silent drop
+    if (isRandomString(formData.name) || isRandomString(formData.message))
+      return;
+    if (isSpamEmail(formData.email)) return;
+
+    // 3. Real validation
     const errors = validateForm(formData);
     if (Object.keys(errors).length > 0) {
       setFieldErrors(errors);
@@ -101,7 +126,7 @@ function ContactForm() {
       setShowPopup(true);
       console.error("Form error:", err);
     }
-  };
+  };;
 
   const closePopup = () => {
     setShowPopup(false);
