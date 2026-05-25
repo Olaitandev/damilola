@@ -53,7 +53,7 @@ function Section3() {
             >
               <SlNotebook className="size-[25px] shrink-0" />
               <p>
-                My coaching students have landed more than 200jobs that pay in
+                My coaching students have landed more than 200 jobs that pay in
                 foreign currency
               </p>
             </div>

@@ -98,7 +98,7 @@ function Reviews() {
       title: "Digital Product Customer",
       testimonial:
         "The best use of my money and time. The material is so rich I can’t imagine the effort it took to put it together.",
-      image: "https://github.com/maxleiter.png",
+      image: "/praise.png",
     },
     {
       id: 4,
@@ -122,7 +122,7 @@ function Reviews() {
       title: "1:1 Consultation Client      ",
       testimonial:
         "Oluwadamilola, the journey you’ve undertaken to guide professionals in channeling their inner strengths and becoming the best versions of themselves is truly commendable. Even if you don’t hear it often, know that you’re making a real impact. Well done!",
-      image: "https://github.com/pranathip.png",
+      image: "/foster.png",
     },
     // {
     //   id: 7,

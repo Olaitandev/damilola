@@ -41,13 +41,13 @@ function SocialLinks() {
           <p className="font-medium">@damifayanjuola</p>
         </Link>
         <Link
-          href="https://www.instagram.com/damifayanjuol"
+          href="https://www.instagram.com/damifayanjuola"
           target="_blank"
           rel="noopener noreferrer"
           className="flex flex-row items-center gap-3 transition-opacity lg:items-start lg:flex-col hover:opacity-70"
         >
           <FaInstagram size={30} />
-          <p className="font-medium">@damifayanjuol</p>
+          <p className="font-medium">@damifayanjuola</p>
         </Link>
         <Link
           href="https://x.com/damifayanjuola"

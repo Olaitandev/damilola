@@ -17,14 +17,14 @@ const timelineData = [
     text: "I landed my first remote job and discovered how global hiring really works. For the first time, I saw that my skills had global value.",
   },
   {
-    image: "/front.avif",
-    date: "Now",
-    text: "I've held multiple international roles, managed hiring across 30+ countries, coached thousands, and built Peepuu — a platform that connects credible talent with serious global employers.",
-  },
-  {
     image: "/image9.avif",
     date: "Jun 2023",
     text: "Started mentoring beginners and giving back to the community.",
+  },
+  {
+    image: "/front.avif",
+    date: "Now",
+    text: "I've held multiple international roles, managed hiring across 30+ countries, coached thousands, and built Peepuu — a platform that connects credible talent with serious global employers.",
   },
 ];
 

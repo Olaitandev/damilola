@@ -36,9 +36,9 @@ function Section3() {
       id: 4,
       title: "Speaker",
       subtitle:
-        "My digital products have helped thousands build world class resumes, dominate LinkedIn, and secure remote job interviews quickly. Every resource is built for one outcome: getting you hired faster!",
+        "I’ve spoken on more than 50 stages, from corporate events to TV, delivering practical insights on Remote Work, Financial Freedom, and Entrepreneurship. Audiences leave with tools and transformation, not just talk.",
       linkText: "Book Dami to speak",
-      linkUrl: "/partnership",
+      linkUrl: "/bookdami",
       image: "/speaker.avif",
     },
     {

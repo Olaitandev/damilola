@@ -194,7 +194,7 @@ const ContactDialog = ({
                     HR Consulting
                   </label>
 
-                  <label className="flex items-center">
+                  {/* <label className="flex items-center">
                     <input
                       type="radio"
                       name="userType"
@@ -204,7 +204,7 @@ const ContactDialog = ({
                       className="mr-2"
                     />
                     Second choice
-                  </label>
+                  </label> */}
 
                   <label className="flex items-center">
                     <input

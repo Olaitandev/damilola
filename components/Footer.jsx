@@ -4,6 +4,10 @@ import Link from "next/link";
 import React, { useState, useEffect } from "react";
 
 function Footer() {
+  const [email, setEmail] = useState("");
+  const [status, setStatus] = useState("idle");
+  const [errorMsg, setErrorMsg] = useState("");
+
   const [currentYear, setCurrentYear] = useState(2024); // Fallback year
 
   useEffect(() => {
@@ -23,6 +27,43 @@ function Footer() {
     // { name: "Get Free Blueprint", href: "/" },
   ];
 
+
+
+
+  const handleSubscribe = async () => {
+    // console.log("URL:", process.env.NEXT_PUBLIC_SUPABASE_URL);
+    // console.log("KEY:", process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY);
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      setErrorMsg("Please enter a valid email.");
+      setStatus("error");
+      return;
+    }
+  
+    setStatus("loading");
+    setErrorMsg("");
+  
+    try {
+      const res = await fetch(
+        `${process.env.NEXT_PUBLIC_SUPABASE_URL}/functions/v1/footer-subscribe`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            apikey: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
+          },
+          body: JSON.stringify({ email }),
+        },
+      );
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Something went wrong");
+      setStatus("success");
+      setEmail("");
+    } catch (err) {
+      setErrorMsg(err.message || "Something went wrong. Try again.");
+      setStatus("error");
+    }
+  };
   return (
     <footer className="w-full bg-white">
       <hr className="outline-[0.5px]" />
@@ -70,7 +111,7 @@ function Footer() {
               </div>
             </div>
           </div>
-          <div
+          {/* <div
             className="w-full mt-6 "
             data-aos="fade-up"
             data-aos-duration="800"
@@ -80,6 +121,14 @@ function Footer() {
             </p>
             <div className="relative flex flex-col">
               <input
+                type="text"
+                name="_honey"
+                aria-hidden="true"
+                tabIndex={-1}
+                style={{ display: "none" }}
+                // intentionally uncontrolled — bots fill it, humans don't
+              />
+              <input
                 type="email"
                 placeholder="Enter your email"
                 className="p-2 mt-2 mr-4 border border-gray-300 rounded-md "
@@ -88,6 +137,58 @@ function Footer() {
               <button className="bg-black text-white rounded-md font-semibold p-2 px-4 mt-2 max-w-[150px] text-center">
                 Subscribe
               </button>
+              <p className="mt-6 text-sm">
+                By subscribing you agree to with our{" "}
+                <Link href="/privacy" className="underline">
+                  Privacy Policy.
+                </Link>
+              </p>
+            </div>
+          </div> */}
+          <div
+            className="w-full mt-6"
+            data-aos="fade-up"
+            data-aos-duration="800"
+          >
+            <p className="mt-5 text-[18px] font-semibold font-work-sans">
+              subscribe
+            </p>
+            <div className="relative flex flex-col">
+              {status === "success" ? (
+                <p className="mt-2 text-sm font-medium text-green-600">
+                  You're in! Check your inbox.
+                </p>
+              ) : (
+                <>
+                  <input
+                    type="text"
+                    name="_honey"
+                    aria-hidden="true"
+                    tabIndex={-1}
+                    style={{ display: "none" }}
+                    // intentionally uncontrolled — bots fill it, humans don't
+                  />
+                  <input
+                    type="email"
+                    placeholder="Enter your email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    onKeyDown={(e) => e.key === "Enter" && handleSubscribe()}
+                    className="p-2 mt-2 mr-4 border border-gray-300 rounded-md"
+                    suppressHydrationWarning
+                  />
+                  <button
+                    onClick={handleSubscribe}
+                    disabled={status === "loading"}
+                    className="bg-black text-white rounded-md font-semibold p-2 px-4 mt-2 max-w-[150px] text-center disabled:opacity-50"
+                  >
+                    {status === "loading" ? "Subscribing…" : "Subscribe"}
+                  </button>
+                  {status === "error" && (
+                    <p className="mt-2 text-sm text-red-500">{errorMsg}</p>
+                  )}
+                </>
+              )}
               <p className="mt-6 text-sm">
                 By subscribing you agree to with our{" "}
                 <Link href="/privacy" className="underline">
@@ -129,12 +230,12 @@ function Footer() {
             >
               Media & Press
             </Link> */}
-            <Link
+            {/* <Link
               href="https://www.peepuu.com/"
               className="text-sm font-medium text-black font-work-sans"
             >
               Blog
-            </Link>
+            </Link> */}
             <Link
               href="/contact"
               className="text-sm font-medium text-black font-work-sans"

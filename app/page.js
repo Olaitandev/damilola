@@ -20,9 +20,7 @@ export default function Home() {
   return (
     <div className="relative bg-white overflow-clip">
       <NavBar />
-      <div className="h-10 lg:h-15">
-        
-</div>
+      <div className="h-10 lg:h-15"></div>
       <Hero />
 
       <Section1
@@ -32,7 +30,7 @@ export default function Home() {
               steps to land your first remote job that pays in foreign currency."
       />
       <Section2 />
-      
+
       <Brands />
 
       <Section3 />
@@ -50,7 +48,7 @@ export default function Home() {
         title="Get Unstuck and Land the Remote Job You’ve Been Chasing"
         description=" In our one-on-one consultation, I will review your situation, show you what is blocking your progress, and give you a clear action plan to land the remote job you want."
         button1Text="Book a One-on-One Consultation"
-        button1Route="/contact"
+        button1Route="https://damiexpressions.selar.com/speakwithdami"
       />
 
       {/* Reviews Section */}

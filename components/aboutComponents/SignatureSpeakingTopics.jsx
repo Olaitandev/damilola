@@ -42,10 +42,10 @@ function SignatureSpeakingTopics() {
                How professionals can land roles without borders and thrive in
               global teams.
             </p>
-            <div className="flex flex-row items-center justify-center gap-2 mt-5 text-center">
+            {/* <div className="flex flex-row items-center justify-center gap-2 mt-5 text-center">
               <p>Watch</p>
               <ChevronRight size={20} />
-            </div>
+            </div> */}
           </div>
           <div className="max-w-[410px] items-center text-center gap-3">
             <div className="lg:max-w-[410px] lg:max-h-[240px] max-w-[100%] max-h-[240px]   ">
@@ -66,10 +66,10 @@ function SignatureSpeakingTopics() {
               Lessons from failing, rebuilding, and creating opportunities that
               last.
             </p>
-            <div className="flex flex-row items-center justify-center gap-2 mt-5 text-center">
+            {/* <div className="flex flex-row items-center justify-center gap-2 mt-5 text-center">
               <p>Watch</p>
               <ChevronRight size={20} />
-            </div>
+            </div> */}
           </div>
           <div className="max-w-[410px] items-center text-center gap-3 ">
             <div className="max-w-[100%] max-h-[240px] ">
@@ -89,10 +89,10 @@ function SignatureSpeakingTopics() {
             <p className="mt-4 text-sm font-work-sans">
               How to turn skills into income and take control of your life.
             </p>
-            <div className="flex flex-row items-center justify-center gap-2 mt-5 text-center">
+            {/* <div className="flex flex-row items-center justify-center gap-2 mt-5 text-center">
               <p>Watch</p>
               <ChevronRight size={20} />
-            </div>
+            </div> */}
           </div>
         </div>
         <Link href="/bookdami">
