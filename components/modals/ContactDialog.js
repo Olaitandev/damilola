@@ -457,7 +457,10 @@ const ContactDialog = ({
         </DialogTrigger>
 
         {/* ↓ THE KEY FIX: constrain height, allow scroll, prevent overflow on mobile */}
-        <DialogContent className="flex flex-col w-[calc(100%-2rem)] sm:max-w-2xl max-h-[90dvh] overflow-y-auto p-4 sm:p-6">
+        <DialogContent
+          onOpenAutoFocus={(e) => e.preventDefault()}
+          className="flex flex-col w-[calc(100%-2rem)] sm:max-w-2xl max-h-[90dvh] overflow-y-auto p-4 sm:p-6"
+        >
           <form onSubmit={handleSubmit} className="flex flex-col gap-4">
             <DialogHeader>
               <DialogTitle className="text-xl sm:text-2xl text-center font-ivy-presto">
