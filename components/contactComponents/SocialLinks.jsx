@@ -15,11 +15,11 @@ function SocialLinks() {
     >
       <div className="flex flex-col gap-8 mx-auto lg:flex-row md:gap-10 lg:gap-18 max-w-7xl">
         <Link
-          href="mailto:info@dami.com"
+          href="mailto:hello@damifayanjuola.com"
           className="flex flex-row items-center gap-3 transition-opacity lg:flex-col hover:opacity-70 lg:items-start"
         >
           <CiMail size={30} />
-          <p className="font-medium">info@dami.com</p>
+          <p className="font-medium">hello@damifayanjuola.com</p>
         </Link>
         <Link
           href="https://www.linkedin.com/in/damifayanjuola"

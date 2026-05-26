@@ -260,7 +260,7 @@ function Footer() {
           </div>
           <div>
             <p className="font-medium">
-              © {currentYear} Dami Fayunjuola. All rights reserved.
+              © {currentYear} Dami Fayanjuola. All rights reserved.
             </p>
           </div>
         </div>
