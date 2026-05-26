@@ -57,27 +57,22 @@ function Hero() {
           loop
           muted={isMuted}
           playsInline
-          poster="//speaker.avif" /* fallback frame while loading */
-          // onCanPlay={() => setIsVideoLoaded(true)}
+          preload="auto"
+          poster="/speaker.avif"
           onLoadedData={() => setIsVideoLoaded(true)}
           onError={() => setIsVideoLoaded(false)}
-          preload="metadata"
+          fetchPriority="high"
         >
+          {/* MP4 first — hardware-decoded everywhere, faster start */}
           <source
-            src="https://res.cloudinary.com/dqd6beq36/video/upload/q_auto,vc_vp9,f_webm/v1779743636/Snippets_cnj4tl.mp4"
+            src="https://res.cloudinary.com/dqd6beq36/video/upload/q_auto:good,vc_h264:high:3.1,br_2000k,w_1920,c_limit,f_mp4/v1779743636/Snippets_cnj4tl.mp4"
+            type="video/mp4"
+          />
+          {/* WebM as fallback for browsers that prefer it */}
+          <source
+            src="https://res.cloudinary.com/dqd6beq36/video/upload/q_auto:good,vc_vp9,br_2000k,w_1920,c_limit,f_webm/v1779743636/Snippets_cnj4tl.mp4"
             type="video/webm"
           />
-          <source
-            src="https://res.cloudinary.com/dqd6beq36/video/upload/q_auto,vc_h264,ac_aac,f_mp4/v1779743636/Snippets_cnj4tl.mp4"
-            type="video/mp4"
-          />
-
-          {/* <source src="/videos/hero.webm" type="video/webm" /> */}
-          {/* <source
-            src="https://www.w3schools.com/html/mov_bbb.mp4"
-            type="video/mp4"
-          /> */}
-          {/* Graceful fallback for no-JS / unsupported browsers */}
           Your browser does not support HTML5 video.
         </video>
       </div>
