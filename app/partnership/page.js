@@ -10,7 +10,7 @@ import React from "react";
 
 function PartnershipPage() {
   return (
-    <div>
+    <div className=" overflow-clip">
       <NavBar />
       <PartnershipHero
         title=" Work With Dami"
