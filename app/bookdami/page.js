@@ -9,6 +9,21 @@ import HandPickYourTopic from "@/components/bookDamiComponents/HandPickYourTopic
 import BookDamiSlider from "@/components/bookDamiComponents/BookDamiSlider";
 import BookDamiDialog from "@/components/modals/BookDamiDialog";
 
+export const metadata = {
+  title: "Book Damilola Fayanjuola",
+  description: "Bring Clarity to the Future of Work — Today",
+  alternates: {
+    canonical: "https://www.damifayanjuola.com/bookdami",
+  },
+  openGraph: {
+    title: "Boko Damilola Fayanjuola",
+    description: "Bring Clarity to the Future of Work — Today",
+    url: "https://www.damifayanjuola.com/bookdami",
+    // images: [{ url: "/og-coaching.jpg", width: 1200, height: 630 }],
+  },
+};
+
+
 function page() {
   return (
     <div className="overflow-x-clip">

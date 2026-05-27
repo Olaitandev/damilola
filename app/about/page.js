@@ -10,9 +10,46 @@ import SignatureSpeakingTopics from "@/components/aboutComponents/SignatureSpeak
 import WhatiBring from "@/components/aboutComponents/WhatiBring";
 import PartnershipHero from "@/components/partnershipComponents/PartnershipHero";
 
+
+export const metadata = {
+  title: "About Damilola Fayanjuola",
+  description: "Everything you need to know about me",
+  alternates: {
+    canonical: "https://www.damifayanjuola.com/about",
+  },
+  openGraph: {
+    title: "About Damilola Fayanjuola",
+    description: "Everything you need to know about me",
+    url: "https://www.damifayanjuola.com/about",
+    // images: [{ url: "/og-coaching.jpg", width: 1200, height: 630 }],
+  },
+};
+
+
 export default function About() {
+
+
+
+  const aboutSchema = {
+    "@context": "https://schema.org",
+    "@type": "About",
+    name: "Damilola Fayanjuola",
+    provider: {
+      "@type": "Person",
+      name: "Damilola Fayanjuola",
+      url: "https://www.damifayanjuola.com",
+    },
+    description:
+      "Private coaching sessions to build a personalized remote job search strategy, optimize your resume, and prepare for remote interviews.",
+    url: "https://www.damifayanjuola.com/about",
+  };
+
   return (
     <div className="bg-white overflow-clip">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutSchema) }}
+      />
       {/* Navigation Bar */}
       <NavBar />
 
@@ -26,16 +63,9 @@ export default function About() {
 
       <Brands />
 
-
-
       <WhatiBring />
 
-
-   
       <SignatureSpeakingTopics />
-
-
- 
 
       <PartnershipHero
         title="Ready to Build Your Global Career?"
