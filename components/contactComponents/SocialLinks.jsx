@@ -6,7 +6,6 @@ import { CiMail } from "react-icons/ci";
 import { AiOutlineYoutube } from "react-icons/ai";
 import { RiTwitterXFill } from "react-icons/ri";
 
-
 function SocialLinks() {
   return (
     <section
@@ -16,7 +15,7 @@ function SocialLinks() {
       <div className="flex flex-col gap-8 mx-auto lg:flex-row md:gap-10 lg:gap-18 max-w-7xl">
         <Link
           href="mailto:hello@damifayanjuola.com"
-          className="flex flex-row items-center gap-3 transition-opacity lg:flex-col hover:opacity-70 lg:items-start"
+          className="flex flex-row items-center gap-3 transition-opacity lg:flex-col hover:opacity-70 "
         >
           <CiMail size={30} />
           <p className="font-medium">hello@damifayanjuola.com</p>
@@ -25,7 +24,7 @@ function SocialLinks() {
           href="https://www.linkedin.com/in/damifayanjuola"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex flex-row items-center gap-3 transition-opacity lg:items-start lg:flex-col hover:opacity-70"
+          className="flex flex-row items-center gap-3 transition-opacity  lg:flex-col hover:opacity-70"
         >
           <CiLinkedin size={30} />
 
@@ -35,7 +34,7 @@ function SocialLinks() {
           href="https://www.youtube.com/@damifayanjuola"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex flex-row items-center gap-3 transition-opacity lg:items-start lg:flex-col hover:opacity-70"
+          className="flex flex-row items-center gap-3 transition-opacity  lg:flex-col hover:opacity-70"
         >
           <AiOutlineYoutube size={30} />
           <p className="font-medium">@damifayanjuola</p>
@@ -44,7 +43,7 @@ function SocialLinks() {
           href="https://www.instagram.com/damifayanjuola"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex flex-row items-center gap-3 transition-opacity lg:items-start lg:flex-col hover:opacity-70"
+          className="flex flex-row items-center gap-3 transition-opacity  lg:flex-col hover:opacity-70"
         >
           <FaInstagram size={30} />
           <p className="font-medium">@damifayanjuola</p>
@@ -53,7 +52,7 @@ function SocialLinks() {
           href="https://x.com/damifayanjuola"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex flex-row items-center gap-3 transition-opacity lg:items-start lg:flex-col hover:opacity-70"
+          className="flex flex-row items-center gap-3 transition-opacity  lg:flex-col hover:opacity-70"
         >
           <RiTwitterXFill size={30} />
 

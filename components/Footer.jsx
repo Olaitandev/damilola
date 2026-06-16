@@ -27,9 +27,6 @@ function Footer() {
     // { name: "Get Free Blueprint", href: "/" },
   ];
 
-
-
-
   const handleSubscribe = async () => {
     // console.log("URL:", process.env.NEXT_PUBLIC_SUPABASE_URL);
     // console.log("KEY:", process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY);
@@ -39,10 +36,10 @@ function Footer() {
       setStatus("error");
       return;
     }
-  
+
     setStatus("loading");
     setErrorMsg("");
-  
+
     try {
       const res = await fetch(
         `${process.env.NEXT_PUBLIC_SUPABASE_URL}/functions/v1/footer-subscribe`,
@@ -151,7 +148,7 @@ function Footer() {
             data-aos-duration="800"
           >
             <p className="mt-5 text-[18px] font-semibold font-work-sans">
-              subscribe
+              Subscribe
             </p>
             <div className="relative flex flex-col">
               {status === "success" ? (

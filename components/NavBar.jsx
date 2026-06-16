@@ -41,11 +41,11 @@ const NavBar = ({ cartVisible = false }) => {
     () => [
       { href: "/", label: "Home" },
       { href: "/about", label: "About" },
-      { href: "/partnership", label: "What i do" },
+      { href: "/partnership", label: "What I Do" },
       // { href: "/blog", label: "Blog" },
       { href: "/contact", label: "Contact" },
     ],
-    []
+    [],
   );
 
   // Simplified link class generator

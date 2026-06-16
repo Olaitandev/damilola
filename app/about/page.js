@@ -10,37 +10,36 @@ import SignatureSpeakingTopics from "@/components/aboutComponents/SignatureSpeak
 import WhatiBring from "@/components/aboutComponents/WhatiBring";
 import PartnershipHero from "@/components/partnershipComponents/PartnershipHero";
 
-
 export const metadata = {
-  title: "About Damilola Fayanjuola",
-  description: "Everything you need to know about me",
+  title:
+    "Remote Job Coach — Land Global Jobs That Pay in USD | Dami Fayanjuola ",
+  description:
+    "Remote job coaching for African professionals. Land global roles that pay in foreign currency with a proven system that's placed 200+ people. Book a free training.",
   alternates: {
     canonical: "https://www.damifayanjuola.com/about",
   },
   openGraph: {
-    title: "About Damilola Fayanjuola",
-    description: "Everything you need to know about me",
+    title:
+      "Remote Job Coach — Land Global Jobs That Pay in USD | Dami Fayanjuola ",
+    description:
+      "Remote job coaching for African professionals. Land global roles that pay in foreign currency with a proven system that's placed 200+ people. Book a free training.",
     url: "https://www.damifayanjuola.com/about",
     // images: [{ url: "/og-coaching.jpg", width: 1200, height: 630 }],
   },
 };
 
-
 export default function About() {
-
-
-
   const aboutSchema = {
     "@context": "https://schema.org",
     "@type": "About",
-    name: "Damilola Fayanjuola",
+    name: "Remote Job Coach — Land Global Jobs That Pay in USD | Dami Fayanjuola ",
     provider: {
       "@type": "Person",
-      name: "Damilola Fayanjuola",
+      name: "Remote Job Coach — Land Global Jobs That Pay in USD | Dami Fayanjuola ",
       url: "https://www.damifayanjuola.com",
     },
     description:
-      "Private coaching sessions to build a personalized remote job search strategy, optimize your resume, and prepare for remote interviews.",
+      "Remote job coaching for African professionals. Land global roles that pay in foreign currency with a proven system that's placed 200+ people. Book a free training.",
     url: "https://www.damifayanjuola.com/about",
   };
 
@@ -69,7 +68,7 @@ export default function About() {
 
       <PartnershipHero
         title="Ready to Build Your Global Career?"
-        description="Don’t Just read my story. Start building yours today. Whether you want step-by-step coaching, proven digital tools, or direct strategy from me, the next move is yours"
+        description="Don’t just read my story. Start building yours today. Whether you want step-by-step coaching, proven digital tools, or direct strategy from me, the next move is yours."
         button1Text="Join Coaching"
         button2Text="Explore Digital Products"
         button1Route="https://damiexpressions.selar.com/remoteready"

@@ -7,29 +7,29 @@ function BookDamiSlider() {
     {
       image: "https://github.com/evilrabbit.png",
       alt: "Book Dami",
-      title: "She is a must follow",
-      subtitle: "Thought Leader",
-      text: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."',
-      name: "Chiamaka Anikewe",
-      role: "Head of Compliance, Microsoft Inc",
+      title: "High-Impact Speaker",
+      subtitle: "Engaging & Action-Oriented",
+      text: '"Every minute with Dami on stage is high energy and high impact. She connects with the audience instantly and leaves them with practical strategies they can use immediately."',
+      name: "Ifunanya Njom",
+      role: "Speakers’ Coordinator, Expedition Conference",
+    },
+    {
+      image: "/falude.png",
+      alt: "Book Dami 2",
+      title: "Transformational Keynote Speaker",
+      subtitle: "Insightful & Influential",
+      text: '"Dami brings a rare combination of global perspective and deep cultural insight. She spoke with so much brilliance and impact. Her session had the most positive feedback during our conference."',
+      name: "Emmanuel Falude",
+      role: "Director of Education & Certification, Green Building Council of Nigeria",
     },
     {
       image: "https://github.com/shadcn.png",
-      alt: "Book Dami 2",
-      title: "Inspiring Speaker",
-      subtitle: "Visionary",
-      text: '"Dami brings clarity and passion to every topic. Her insights are invaluable and her delivery is always engaging."',
-      name: "Tunde Bakare",
-      role: "CEO, TechCabal",
-    },
-    {
-      image: "https://github.com/evilrabbit.png",
       alt: "Book Dami 3",
-      title: "Empowering Mentor",
-      subtitle: "Guide",
-      text: '"Her mentorship has transformed my career. Dami is truly a leader worth following."',
-      name: "Ngozi Okonjo",
-      role: "Product Manager, The Guardian",
+      title: "Future of Work Expert",
+      subtitle: "Strategic & Practical",
+      text: '"Dami’s keynote on the future of work wasn’t just insightful — it was actionable. She gave our leaders clarity on how to adapt right now, not in five years."',
+      name: "Judith Azi",
+      role: "Country Operations Manager, Cenoa",
     },
   ];
 
@@ -80,13 +80,13 @@ function BookDamiSlider() {
                   alt={post.alt}
                   width={500}
                   height={500}
-                  className="object-cover object-center mx-auto rounded-full h-30 w-30"
+                  className="object-cover object-center mx-auto rounded-full h-30 w-30 mb-5"
                 />
-                <div className="text-center">
+                <div className="text-center flex gap-3 flex-col ">
                   <p className="font-serif text-4xl ">{post.title}</p>
-                  <h2 className="mt-2 text-4xl font-bold font-ivy-presto">
+                  {/* <h2 className="mt-2 text-4xl font-bold font-ivy-presto">
                     {post.subtitle}
-                  </h2>
+                  </h2> */}
                   <p className="mt-3">{post.text}</p>
                 </div>
                 <div className="mt-5 text-center">

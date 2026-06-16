@@ -30,7 +30,7 @@ function ContactHero() {
             <p className="text-sm text-white md:text-lg lg:text-xl font-work-sans lg:leading-relaxed md:mt-3">
               Whether you want a speaker for your next event, strategy for your
               career, or a partner who delivers results, this is where the
-              conversation starts
+              conversation starts.
             </p>
             {/* <button className="bg-[#EDF296] text-black rounded-full p-2 px-4 md:px-10 font-medium mt-2">
               Contact Me

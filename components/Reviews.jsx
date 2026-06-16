@@ -81,7 +81,7 @@ function Reviews() {
       name: "Zita Uzoezie",
       title: "Coaching Client",
       testimonial:
-        "My coaching experience with Dami has truly shown me that anything is possible when you have the right guidance from someone who has walked the path before you. My goal was to land my dream job, but Dami’s coaching went beyond just career advice,she helped me grow in every aspect of my life. Thank you for always showing up, for being a great coach, for keeping me accountable, and most importantly, for helping me stay confident and believe in myself. And the best part? I landed my dream job even before our sessions were over. We did it!!!",
+        "My coaching experience with Dami has truly shown me that anything is possible when you have the right guidance from someone who has walked the path before you. My goal was to land my dream job, but Dami’s coaching went beyond just career advice, she helped me grow in every aspect of my life. Thank you for always showing up, for being a great coach, for keeping me accountable, and most importantly, for helping me stay confident and believe in myself. And the best part? I landed my dream job even before our sessions were over. We did it!!!",
       image: "https://github.com/evilrabbit.png",
     },
     {
@@ -163,7 +163,7 @@ function Reviews() {
           className={clsx(
             "grid grid-cols-1 md:grid-cols-2 mt-12 gap-6 lg:gap-2 lg:w-1/2",
             "[mask-image:linear-gradient(to_bottom,transparent,black_20%,black_80%,transparent)]",
-            "max-h-[700px] overflow-hidden"
+            "max-h-[700px] overflow-hidden",
           )}
         >
           {/* Column 1: scrolls UP */}

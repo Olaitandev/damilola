@@ -1,11 +1,6 @@
 "use client";
 import { ChatTeardropTextIcon } from "@phosphor-icons/react";
-import {
-
-  MessageCircleMore,
-  NotebookPen,
-  SquareStack,
-} from "lucide-react";
+import { MessageCircleMore, NotebookPen, SquareStack } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 import Image5 from "@/public/image5.svg";
@@ -15,10 +10,6 @@ import { PiChatTeardropText } from "react-icons/pi";
 import { PiRobotLight } from "react-icons/pi";
 
 import { HiOutlinePuzzlePiece } from "react-icons/hi2";
-
-
-
-
 
 function Section3() {
   return (
@@ -49,19 +40,17 @@ function Section3() {
               className="flex flex-row justify-start gap-5"
               data-aos="fade-right"
               data-aos-duration="800"
-     
             >
               <SlNotebook className="size-[25px] shrink-0" />
               <p>
                 My coaching students have landed more than 200 jobs that pay in
-                foreign currency
+                foreign currency.
               </p>
             </div>
             <div
               className="flex flex-row justify-start gap-5"
               data-aos="fade-right"
               data-aos-duration="800"
-
             >
               <PiChatTeardropText className="size-[25px] shrink-0" />
 
@@ -74,7 +63,6 @@ function Section3() {
               className="flex flex-row justify-start gap-5"
               data-aos="fade-right"
               data-aos-duration="800"
-             
             >
               <PiRobotLight className="size-[25px] shrink-0" />
 
@@ -86,21 +74,14 @@ function Section3() {
             <div
               className="flex flex-row justify-start gap-5"
               data-aos="fade-right"
-                data-aos-duration="800"
-              
-    
+              data-aos-duration="800"
             >
               <HiOutlinePuzzlePiece className="size-[30px] shrink-0" />
-              <p>I believe execution beats motivation, always</p>
+              <p>I believe execution beats motivation, always.</p>
             </div>
           </div>
         </div>
-        <div
-          className="md:w-1/2"
-          data-aos="fade-left"
-            data-aos-duration="800"
-       
-        >
+        <div className="md:w-1/2" data-aos="fade-left" data-aos-duration="800">
           <Image
             src={"/liedown.avif"}
             width={500}

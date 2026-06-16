@@ -5,7 +5,6 @@ import ClientWrapper from "./ClientWrapper";
 import AOSProvider from "@/lib/AOSProvider";
 import { Analytics } from "@vercel/analytics/next";
 
-
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -33,11 +32,12 @@ const ivyPresto = localFont({
 export const metadata = {
   metadataBase: new URL("https://www.damifayanjuola.com"),
   title: {
-    default: "Damilola Fayanjuola",
+    default:
+      "Remote Job Coach — Land Global Jobs That Pay in USD | Dami Fayanjuola",
     // template: "%s | Jane Doe",
   },
   description:
-    "Helping professionals land remote jobs faster with proven strategies, 1-on-1 coaching, and actionable resources.",
+    "Remote job coaching for African professionals. Land global roles that pay in foreign currency with a proven system that's placed 200+ people. Book a free training. ",
   keywords: [
     "remote job coach",
     "find remote jobs",
@@ -46,23 +46,29 @@ export const metadata = {
     "remote job search strategy",
   ],
   authors: [
-    { name: "Damilola Fayanjuola", url: "https://www.damifayanjuola.com" },
+    {
+      name: "Remote Job Coach — Land Global Jobs That Pay in USD | Dami Fayanjuola",
+      url: "https://www.damifayanjuola.com",
+    },
   ],
-  creator: "Damilola Fayanjuola",
+  creator:
+    "Remote Job Coach — Land Global Jobs That Pay in USD | Dami Fayanjuola",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://www.damifayanjuola.com",
-    siteName: "Damilola Fayanjuola | Remote Job Coach",
-    title: "Damilola Fayanjuola | Remote Job Coach & Career Strategist",
+    siteName:
+      "Remote Job Coach — Land Global Jobs That Pay in USD | Dami Fayanjuola",
+    title:
+      "Remote Job Coach — Land Global Jobs That Pay in USD | Dami Fayanjuola",
     description:
-      "Helping professionals land remote jobs faster with proven strategies and 1-on-1 coaching.",
+      "Remote job coaching for African professionals. Land global roles that pay in foreign currency with a proven system that's placed 200+ people. Book a free training.",
     images: [
       {
         url: "/logo.svg",
         width: 1200,
         height: 630,
-        alt: "Damilola Fayanjuola, Remote Job Coach",
+        alt: "Remote Job Coach — Land Global Jobs That Pay in USD | Dami Fayanjuola",
       },
     ],
   },
@@ -85,7 +91,6 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-
   const personSchema = {
     "@context": "https://schema.org",
     "@type": "Person",
@@ -97,9 +102,10 @@ export default function RootLayout({ children }) {
       "https://x.com/damifayanjuola",
       "https://www.youtube.com/@damifayanjuola",
     ],
-    jobTitle: "Remote Job Coach",
+    jobTitle:
+      "Remote Job Coach — Land Global Jobs That Pay in USD | Dami Fayanjuola",
     description:
-      "Career coach helping professionals land remote jobs through proven strategies and 1-on-1 coaching.",
+      "Remote job coaching for African professionals. Land global roles that pay in foreign currency with a proven system that's placed 200+ people. Book a free training.",
   };
   return (
     <html lang="en">
@@ -122,7 +128,6 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${workSans.variable} ${ivyPresto.variable} antialiased`}
       >
-        {" "}
         <AOSProvider />
         <ClientWrapper>{children}</ClientWrapper>
         <Analytics />

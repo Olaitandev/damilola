@@ -10,19 +10,22 @@ import BookDamiSlider from "@/components/bookDamiComponents/BookDamiSlider";
 import BookDamiDialog from "@/components/modals/BookDamiDialog";
 
 export const metadata = {
-  title: "Book Damilola Fayanjuola",
-  description: "Bring Clarity to the Future of Work — Today",
+  title:
+    "Remote Job Coach — Land Global Jobs That Pay in USD | Dami Fayanjuola ",
+  description:
+    "Remote job coaching for African professionals. Land global roles that pay in foreign currency with a proven system that's placed 200+ people. Book a free training.",
   alternates: {
     canonical: "https://www.damifayanjuola.com/bookdami",
   },
   openGraph: {
-    title: "Boko Damilola Fayanjuola",
-    description: "Bring Clarity to the Future of Work — Today",
+    title:
+      "Remote Job Coach — Land Global Jobs That Pay in USD | Dami Fayanjuola ",
+    description:
+      "Remote job coaching for African professionals. Land global roles that pay in foreign currency with a proven system that's placed 200+ people. Book a free training.",
     url: "https://www.damifayanjuola.com/bookdami",
     // images: [{ url: "/og-coaching.jpg", width: 1200, height: 630 }],
   },
 };
-
 
 function page() {
   return (

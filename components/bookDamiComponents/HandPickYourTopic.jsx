@@ -17,7 +17,7 @@ function HandPickYourTopic() {
               01
             </h3> */}
             <Image
-              src="/image12.avif"
+              src="/speaker.avif"
               alt="Topic 1"
               width={200}
               height={100}
